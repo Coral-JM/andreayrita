@@ -18,7 +18,7 @@ body {
 /* fonts */
 @font-face {
     font-family: "nats";
-    src:url(/fonts/NATS-Regular.ttf)
+    src:url(../fonts/NATS-Regular.ttf)
 }
 
 @font-face {
