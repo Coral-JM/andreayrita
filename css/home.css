@@ -6,33 +6,23 @@ html, body {
 }
 body {
     min-height: 100vh;
-    background-color: #f8f8ee;
+    background-color: var(--beige);
 }
 
 :root {
     --orange: #ea7f27;
-    --beige: #f8f8ee;
-    --pine-green: #3a5534;
+    --beige: #F8F1EE;
+    --pine-green: #3A6756;
 }
 
 /* fonts */
 @font-face {
-    font-family: "title-deco";
-    src:url(/fonts/Lacquer-Regular.ttf)
+    font-family: "nats";
+    src:url(/fonts/NATS-Regular.ttf)
 }
 @font-face {
     font-family: "title-date";
     src:url(/fonts/White\ wood.otf)
-}
-
-@font-face {
-    font-family: "montserrat-light";
-    src:url(/fonts/Montserrat-Light.ttf)
-}
-
-@font-face {
-    font-family: "montserrat-bold";
-    src:url(/fonts/Montserrat-SemiBold.ttf)
 }
 
 
@@ -43,25 +33,24 @@ main {
     justify-content: center;
     align-items: center;
 }
-
-.hero {
-    width: 80%;
-    height: 25em;
-    background-image: url(/img/Torreta1.png);
-    background-position: center;
+.logo {
+    background-image: url(../img/Logo.png);
+    width: 20em;
+    height: 20em;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 1em;
+    background-position: center;
+    margin: 5em 0 1em 0;
 }
 .title {
-    font-family: "title-deco";
+    font-family: "nats";
     color: var(--pine-green);
-    font-size: 6em;
+    font-size: 4em;
+    line-height: 1em;
 }
 .date {
     display: flex;
     align-items: center;
-    margin: 2em;
 }
 .dot {
     height: 0.5em;
@@ -72,97 +61,126 @@ main {
     margin-right: 1em;
 }
 .title_two {
-    font-family: "title-date";
+    font-family: "nats";
     color: var(--pine-green);
-    font-size: 2.5em;
+    font-size: 3em;
+    line-height: 1.5em;
 }
 .line {
     height: 0.2em;
     width: 80%;
     background-color: var(--pine-green);
 }
-.presentacion {
+.menu {
     display: flex;
     flex-wrap: wrap;
-    width: 75%;
-    font-family: "Montserrat-bold";
-    margin: 1em;
+    margin: 3em 0 6em 0;
     justify-content: center;
+    gap: 3em;
+}
+.text-menu {
+    color: var(--pine-green);
+    font-size: 1.8em;
+    font-family: "nats";
 }
 .text {
-    margin-left: 1em;
-    color: #3a5534;
-    margin-top: 0.5em;
-}
-.sections {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
-.section-1 {
-    width: 9em;
-    height: 11em;
-    background-color: var(--orange);
-    border-radius: 70% 30% 50% 40% / 60% 60% 40% 40%;
-    background-image: url(../img/map.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 80%;
-}
-.section-2 {
-    width: 9em;
-    height: 9em;
-    background-color: var(--orange);
-    border-radius: 50% 30% 50% 30% / 60% 60% 40% 40%;
-    background-image: url(../img/tend.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 90%;
-}
-.section-3 {
-    width: 9em;
-    height: 11em;
-    background-color: var(--orange);
-    border-radius: 50% 40% 60% 30% / 60% 60% 40% 40%;
-    background-image: url(../img/mochila.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 80%;
-}
-.box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3em;
-}
-.text-section {
-    font-family: "montserrat-bold";
-    font-size: 1.5em;
-    padding-top: 1em;
     color: var(--pine-green);
+    font-size: 1.5em;
+    font-family: "nats";
 }
-
-
+.text-none {
+    color: var(--pine-green);
+    font-size: 1.8em;
+    font-family: "nats";
+}
 .button {
     padding: 20px 44px;
     background-color: transparent;
     border: 1px solid var(--pine-green);
     border-radius: 50px;
-    font-family: "Montserrat-light";
+    font-family: "nats";
     color: var(--pine-green);
     font-size: 20px;
     text-decoration: none;
     box-shadow: 0 0 0;
     transition: all 200ms;
-    margin: 3em;
+    margin: 3em 0 0 0;
 }
 .button:hover {
     transform: translateY(-10px);
     box-shadow: 0px 12px 1px var(--pine-green)
-  }
-  
-  .button:active {
+}
+.button:active {
     transform: translateY(10px);
     box-shadow: 0 0 0;
-  }
+}
+.alert {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+}
+.text-alert {
+    font-family: "nats";
+    font-size: 1em;
+    color: var(--pine-green);
+    text-align: center;
+    line-height: 1em;
+}
+.text-alert-mobile {
+    display: none;
+}
 
+@media (max-width: 425px) {
+    .main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .title {
+        font-size: 3em;
+    }
+    .title_two {
+        font-size: 1.5em;
+    }
+    .dot {
+        height: 0.2em;
+        width: 0.2em;
+    }
+    .menu {
+        display: flex;
+        gap: 1em;
+        margin-bottom: 2em
+    }
+    .text-menu {
+        font-size: 1.2em;
+    }
+    .text-none {
+        display: none;
+    }
+    .text {
+        font-size: 1.5em;
+        margin-bottom: -1em;
+    }
+    .alert {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        margin: 3em;
+    }
+    .text-alert {
+        display: none;
+    }
+    .text-alert-mobile {
+        display: block;
+        font-family: "nats";
+        font-size: 1em;
+        color: var(--pine-green);
+        text-align: center;
+        line-height: 1em;
+    }
+    .button:focus {
+        transform: translateY(-10px);
+        box-shadow: 0px 12px 1px var(--pine-green);
+    }
+}

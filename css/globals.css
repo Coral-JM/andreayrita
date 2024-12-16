@@ -4,15 +4,21 @@ html, body {
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --orange: #ea7f27;
+    --beige: #F8F1EE;
+    --pine-green: #3A6756;
+}
+
 body {
     min-height: 100vh;
-    background-color: #f8f8ee;
+    background-color: var(--beige);
 }
 
 /* fonts */
 @font-face {
-    font-family: "title-deco";
-    src:url(/fonts/TAKE\ AWAY\ -\ DEMO.TTF)
+    font-family: "nats";
+    src:url(/fonts/NATS-Regular.ttf)
 }
 
 @font-face {
