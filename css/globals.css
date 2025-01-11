@@ -4,15 +4,29 @@ html, body {
     padding: 0;
     box-sizing: border-box;
 }
-:root {
-    --orange: #ea7f27;
-    --beige: #F8F1EE;
-    --pine-green: #3A6756;
-}
-
 body {
     min-height: 100vh;
     background-color: var(--beige);
+}
+
+:root {
+    --beige: #f4f0ed;
+    --blue: #3d62d3;
+}
+p {
+    font-size: 1em;
+}
+.text {
+    color: var(--blue);
+    font-size: 1.2em;
+    font-family: "nats";
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+.box {
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
 }
 
 /* fonts */
@@ -20,65 +34,7 @@ body {
     font-family: "nats";
     src:url(../fonts/NATS-Regular.ttf)
 }
-
 @font-face {
-    font-family: "montserrat-light";
+    font-family: "mons";
     src:url(/fonts/Montserrat-Light.ttf)
 }
-
-
-
-/* navbar */
-.navbar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    font-family: "montserrat-light";
-    
-}
-.navbar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #ea7f27;
-    display: block;
-    transition: 0.3s;
-}
-.navbar a:hover {
-    color: #575757;
-}
-.closebtn {
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    display: none;
-}
-.openbtn {
-    font-size: 30px;
-    cursor: pointer;
-    color: #ea7f27;
-    border: none;
-    padding: 10px 15px;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    transition: 0.1s;
-    background-color:#f8f8ee
-}
-.openbtn:hover {
-    color: #444;
-}
-.navbar.open .closebtn {
-    display: block;
-}
-
-
-
-

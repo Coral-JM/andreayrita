@@ -1,30 +1,3 @@
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    min-height: 100vh;
-    background-color: var(--beige);
-}
-
-:root {
-    --orange: #ea7f27;
-    --beige: #F8F1EE;
-    --pine-green: #3A6756;
-}
-
-/* fonts */
-@font-face {
-    font-family: "nats";
-    src:url(../fonts/NATS-Regular.ttf)
-}
-@font-face {
-    font-family: "title-date";
-    src:url(/fonts/White\ wood.otf)
-}
-
 
 /* home */
 main {
@@ -34,19 +7,17 @@ main {
     align-items: center;
 }
 .logo {
-    background-image: url(../img/Logo.png);
-    width: 20em;
-    height: 20em;
+    background-image: url(../img/header-img.png);
+    width: 100%;
+    height: 40em;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 5em 0 1em 0;
 }
 .title {
-    font-family: "nats";
-    color: var(--pine-green);
+    font-family: "mons";
+    color: var(--blue);
     font-size: 4em;
-    line-height: 1em;
 }
 .date {
     display: flex;
@@ -55,14 +26,14 @@ main {
 .dot {
     height: 0.5em;
     width: 0.5em;
-    background-color: var(--pine-green);
+    background-color: var(--blue);
     border-radius: 50%;
     margin-left: 1em;
     margin-right: 1em;
 }
 .title_two {
-    font-family: "nats";
-    color: var(--pine-green);
+    font-family: "mons";
+    color: var(--blue);
     font-size: 3em;
     line-height: 1.5em;
 }
@@ -79,27 +50,38 @@ main {
     gap: 3em;
 }
 .text-menu {
-    color: var(--pine-green);
+    color: var(--blue);
     font-size: 1.8em;
     font-family: "nats";
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
-.text {
-    color: var(--pine-green);
+.text-menu:hover {
+    transform: translateY(-3px);
+}
+.text-sup {
+    color: var(--blue);
     font-size: 1.5em;
     font-family: "nats";
 }
 .text-none {
-    color: var(--pine-green);
+    color: var(--blue);
     font-size: 1.8em;
     font-family: "nats";
+    text-decoration: none;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
+.text-none:hover {
+    transform: translateY(-3px);
+}
+
 .button {
     padding: 20px 44px;
     background-color: transparent;
-    border: 1px solid var(--pine-green);
+    border: 1px solid var(--blue);
     border-radius: 50px;
     font-family: "nats";
-    color: var(--pine-green);
+    color: var(--blue);
     font-size: 20px;
     text-decoration: none;
     box-shadow: 0 0 0;
@@ -108,7 +90,7 @@ main {
 }
 .button:hover {
     transform: translateY(-10px);
-    box-shadow: 0px 12px 1px var(--pine-green)
+    box-shadow: 0px 12px 1px var(--blue);
 }
 .button:active {
     transform: translateY(10px);
@@ -123,7 +105,7 @@ main {
 .text-alert {
     font-family: "nats";
     font-size: 1em;
-    color: var(--pine-green);
+    color: var(--blue);
     text-align: center;
     line-height: 1em;
 }
@@ -131,21 +113,36 @@ main {
     display: none;
 }
 
+.footer {
+    background-image: url(../img/footer-img.png);
+    width: 100%;
+    height: 40em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 @media (max-width: 425px) {
     .main {
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
+    .logo {
+        height: 20em;
+    }
+    .footer {
+        height: 20em;
+    }
     .title {
-        font-size: 3em;
+        font-size: 2em;
+        margin-bottom: 1em;
     }
     .title_two {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     .dot {
-        height: 0.2em;
-        width: 0.2em;
+        height: 0.1em;
+        width: 0.1em;
     }
     .menu {
         display: flex;
@@ -158,7 +155,7 @@ main {
     .text-none {
         display: none;
     }
-    .text {
+    .text-sup {
         font-size: 1.5em;
         margin-bottom: -1em;
     }
@@ -175,12 +172,12 @@ main {
         display: block;
         font-family: "nats";
         font-size: 1em;
-        color: var(--pine-green);
+        color: var(--blue);
         text-align: center;
         line-height: 1em;
     }
     .button:focus {
         transform: translateY(-10px);
-        box-shadow: 0px 12px 1px var(--pine-green);
+        box-shadow: 0px 12px 1px var(--blue);
     }
 }
