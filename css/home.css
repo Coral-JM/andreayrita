@@ -74,7 +74,12 @@ main {
 .text-none:hover {
     transform: translateY(-3px);
 }
-
+.box-border {
+    border: solid 1px var(--blue);
+    padding: 2em;
+    margin: 2em;
+    border-radius: 1em;
+}
 .button {
     padding: 20px 44px;
     background-color: transparent;
