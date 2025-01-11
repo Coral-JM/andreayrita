@@ -36,5 +36,5 @@ p {
 }
 @font-face {
     font-family: "mons";
-    src:url(/fonts/Montserrat-Light.ttf)
+    src:url(../fonts/Montserrat-Light.ttf)
 }
