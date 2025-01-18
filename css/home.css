@@ -6,6 +6,40 @@ main {
     justify-content: center;
     align-items: center;
 }
+@media (min-width: 1200px) {
+    .logo {
+        background-image: url(../img/header-img.png);
+        width: 100%;
+        height: 80em;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: -30em;
+    }
+    .box-home {
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-buttons {
+        display: flex;
+        gap: 2em;
+    }
+    .text-home {
+        font-family: 'nats';
+        color: var(--blue);
+        font-size: 2em;
+        text-align: center;
+    }
+    .title_two {
+        font-family: "mons";
+        color: var(--blue);
+        font-size: 2.5em;
+        line-height: 1.5em;
+    }
+}
 .logo {
     background-image: url(../img/header-img.png);
     width: 100%;
@@ -18,6 +52,19 @@ main {
     font-family: "mons";
     color: var(--blue);
     font-size: 4em;
+    margin-bottom: 1em;
+}
+.text-home {
+    font-family: 'nats';
+    color: var(--blue);
+    font-size: 2em;
+    text-align: center;
+}
+.title_two {
+    font-family: "mons";
+    color: var(--blue);
+    font-size: 2.5em;
+    line-height: 1.5em;
 }
 .date {
     display: flex;
@@ -31,88 +78,25 @@ main {
     margin-left: 1em;
     margin-right: 1em;
 }
-.title_two {
-    font-family: "mons";
-    color: var(--blue);
-    font-size: 3em;
-    line-height: 1.5em;
-}
-.line {
-    height: 0.2em;
-    width: 80%;
-    background-color: var(--pine-green);
-}
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3em 0 6em 0;
-    justify-content: center;
-    gap: 3em;
-}
-.text-menu {
-    color: var(--blue);
-    font-size: 1.8em;
-    font-family: "nats";
-    text-decoration: none;
-    transition: transform 0.2s ease, color 0.2s ease;
-}
-.text-menu:hover {
-    transform: translateY(-3px);
-}
-.text-sup {
-    color: var(--blue);
-    font-size: 1.5em;
-    font-family: "nats";
-}
-.text-none {
-    color: var(--blue);
-    font-size: 1.8em;
-    font-family: "nats";
-    text-decoration: none;
-    transition: transform 0.2s ease, color 0.2s ease;
-}
-.text-none:hover {
-    transform: translateY(-3px);
-}
-.box-border {
-    border: solid 1px var(--blue);
-    padding: 2em;
-    margin: 2em;
-    border-radius: 1em;
-}
+
 .button {
-    padding: 20px 44px;
+    padding: 0.5em 1.5em;
     background-color: transparent;
     border: 1px solid var(--blue);
     border-radius: 50px;
     font-family: "nats";
     color: var(--blue);
-    font-size: 20px;
+    font-size: 1.5em;
     text-decoration: none;
     box-shadow: 0 0 0;
     transition: all 200ms;
-    margin: 3em 0 0 0;
+    margin: 1.2em 0 0 0;
     width: 5em;
     box-shadow: 0px 5px 1px var(--blue);
-}
-
-.alert {
-    width: 55%;
     display: flex;
     justify-content: center;
-    margin: 3em;
+    align-items: center;
 }
-.text-alert {
-    font-family: "nats";
-    font-size: 1em;
-    color: var(--blue);
-    text-align: center;
-    line-height: 1em;
-}
-.text-alert-mobile {
-    display: none;
-}
-
 .footer {
     background-image: url(../img/footer-img.png);
     width: 100%;
@@ -121,6 +105,8 @@ main {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+
 @media (max-width: 425px) {
     .main {
         display: flex;
@@ -140,44 +126,24 @@ main {
     .title_two {
         font-size: 1em;
     }
+    
     .dot {
         height: 0.1em;
         width: 0.1em;
     }
-    .menu {
+    .box-home {
         display: flex;
-        gap: 1em;
-        margin-bottom: 2em
-    }
-    .text-menu {
-        font-size: 1.2em;
-    }
-    .text-none {
-        display: none;
-    }
-    .text-sup {
-        font-size: 1em;
-        margin-bottom: -1em;
-    }
-    .alert {
-        width: 75%;
-        display: flex;
-        justify-content: center;
-        margin: 3em;
-    }
-    .text-alert {
-        display: none;
-    }
-    .text-alert-mobile {
-        display: block;
-        font-family: "nats";
-        font-size: 1em;
+        flex-direction: column;
+        font-family: 'nats';
         color: var(--blue);
-        text-align: center;
-        line-height: 1em;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+        padding: 1em;
     }
-    .button:focus {
-        transform: translateY(-10px);
-        box-shadow: 0px 12px 1px var(--blue);
+    .text-home {
+        font-size: 1.3em;
+        line-height: 1.2em;
+        text-align: center;
     }
 }
