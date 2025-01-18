@@ -15,7 +15,7 @@
 .animated-inputs label {
   display: inline-block;
   position: relative;
-  font-size: 1em;
+  font-size: 1.3em;
   padding: 0 0 0 40px;
   vertical-align: top;
   color: var(--blue);
